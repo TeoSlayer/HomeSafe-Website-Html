@@ -25,8 +25,7 @@ class Environment {
     this.font = font;
     this.particle = particle;
     this.container = document.querySelector( '#magic' );
-    this.scene = new THREE.Scene();
-	this 
+    this.scene = new THREE.Scene(); 
     this.createCamera();
     this.createRenderer();
     this.setup()
@@ -107,12 +106,12 @@ class CreateParticles {
 		this.data = {
 
 			text: 'ARE THEY\nHOME SAFE?',
-			amount: 1500,
+			amount: 2500,
 			particleSize: 1,
 			particleColor: 0x3cbbb1,
-			textSize: 16,
+			textSize: 20,
 			area: 250,
-			ease: .05,
+			ease: .10,
 		}
 
 		this.setup();

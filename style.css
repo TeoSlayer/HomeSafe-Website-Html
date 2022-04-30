@@ -7,21 +7,22 @@ html, body {
   font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol' !important;
   color: white;
   font-size: 9px;
+  -webkit-touch-callout: none !important; 
 }
 
 #magic {
-
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100vh;
   display: block;
   top: 0;
   left: 0;
   z-index: -9999;
+  -webkit-touch-callout: none !important; 
 }
 
 .playground{
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100vh;
   display: block;
@@ -32,36 +33,35 @@ html, body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
+  -webkit-touch-callout: none !important; 
 }
 .bottomPosition{
 
   text-align: center;
-  margin-bottom: 50px;
-  
+  margin-bottom: 12%;
+  -webkit-touch-callout: none !important;
 }
 .minText{
   
   font-size: 14px;
+  -webkit-touch-callout: none !important; 
+  
 }
 
 a {
   color: white;
   font-size: 12px;
   text-decoration: none;
+  -webkit-touch-callout: none !important; 
 }
 
 .logo {
     width: 50px;
     height: 50px;
+    -webkit-touch-callout: none !important; 
 }
 
-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: #0A0F0D;
-}
+
 
 
  
