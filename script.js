@@ -20,11 +20,13 @@ else
 class Environment {
 
   constructor( font, particle ){ 
+	
 
     this.font = font;
     this.particle = particle;
     this.container = document.querySelector( '#magic' );
     this.scene = new THREE.Scene();
+	this 
     this.createCamera();
     this.createRenderer();
     this.setup()
@@ -49,9 +51,16 @@ class Environment {
   }
 
   createCamera() {
-
+	
+	
     this.camera = new THREE.PerspectiveCamera( 65, this.container.clientWidth /  this.container.clientHeight, 1, 10000 );
     this.camera.position.set( 0,0, 100 );
+
+	//adjust camera if browser is on mobile
+
+	if ( window.innerWidth < window.innerHeight ) {
+		this.camera.position.set( 0,0, 300);
+	}
 
   }
 
